@@ -34,7 +34,7 @@ def check_diff_elems(arr_1,arr_2):
     return diff
 
 
-def main(input_path_1,input_path_2,same_path,diff_path):
+def check_files(input_path_1,input_path_2,same_path,diff_path):
     strs_1=get_data(input_path_1)
     strs_2=get_data(input_path_2)
     same=check_same_elems(strs_1,strs_2)
@@ -46,4 +46,4 @@ def main(input_path_1,input_path_2,same_path,diff_path):
     print(same,diff)
 
 
-main("input1.txt","input2.txt","same.txt","diff.txt")
+check_files("input_1.txt","input_2.txt","same.txt","diff.txt")
